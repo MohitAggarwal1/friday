@@ -1,0 +1,17 @@
+time
+pyttsx3
+datetime
+SpeechRecognition
+wikipedia-api
+webbrowser
+os
+pyautogui
+pywhatkit
+openai
+csv
+sqlite3
+subprocess
+pipes
+
+
+# pip install -r requirements.txt
