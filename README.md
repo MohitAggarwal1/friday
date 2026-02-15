@@ -1,114 +1,315 @@
-# FRIDAY - README
+# 🤖 FRIDAY – AI Voice Assistant
 
-FRIDAY (Female Replacement Intelligent Digital Assistant Youth) is a personal virtual assistant designed to perform various tasks based on voice commands. Inspired by virtual assistants like Alexa and Google Assistant, FRIDAY automates tasks like web searches, file operations, messaging, and more, using Python libraries.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Voice Recognition](https://img.shields.io/badge/Speech-Recognition-green)
+![OpenAI](https://img.shields.io/badge/AI-Integrated-black)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
----
+📸 **Instagram:** [https://www.instagram.com/mohhitaggarwal](https://www.instagram.com/mohhitaggarwal)  
+💼 **LinkedIn:** [https://www.linkedin.com/in/mohitaggarwalofficial](https://www.linkedin.com/in/mohitaggarwalofficial)
 
-## Features
+> **FRIDAY (Female Replacement Intelligent Digital Assistant Youth)**
+> A Python-based personal AI voice assistant inspired by Alexa & Google Assistant.
 
-1. **Voice Commands**:
-   - Accepts voice commands using speech recognition to execute tasks.
-   - Responds with voice feedback through `pyttsx3`.
-
-2. **Greeting**:
-   - Wishes the user based on the time of day (morning, afternoon, evening).
-
-3. **General Assistance**:
-   - Provides responses to basic greetings and inquiries.
-   - Searches on Wikipedia, Google, and YouTube.
-
-4. **Automated Actions**:
-   - Opens common websites (YouTube, Google, LinkedIn, etc.).
-   - Launches desktop applications like VS Code, Microsoft Word, and more.
-
-5. **System Control**:
-   - Automates system actions like shutdown, restart, sleep, and window management.
-   
-6. **Music and Video Control**:
-   - Opens specified YouTube playlists based on mood (e.g., sad, love, rage, party).
-
-7. **Time and Date Information**:
-   - Tells the current time and date upon request.
-
-8. **WhatsApp Messaging and Calling**:
-   - Uses WhatsApp to send messages, make calls, and initiate video calls based on contact names in a database.
-   
-9. **Cab Booking Simulation**:
-   - Simulates a cab booking process based on user-provided pickup and drop-off locations.
-
-10. **Mathematical Calculations**:
-    - Performs basic calculations on command.
-
-11. **AI-Powered Responses**:
-    - Uses OpenAI to process complex commands not handled by other functions (currently commented out).
+FRIDAY can listen, speak, automate tasks, search the web, send WhatsApp messages, execute system commands, and even process AI-powered responses.
 
 ---
 
-## Setup
+# 🚀 Project Overview
 
-### Prerequisites
+FRIDAY is a **voice-controlled automation assistant** built using Python.
+It integrates:
 
-- Python 3.x
-- Required Libraries:
-  - `pyttsx3`: Text-to-speech library
-  - `speech_recognition`: For voice input
-  - `pyautogui`: For controlling mouse and keyboard
-  - `openai`: For AI-powered command processing
-  - `subprocess`: For executing shell commands
-  - `sqlite3`: For contact management in a local database (`friday.db`)
+* 🎤 Speech Recognition
+* 🔊 Text-to-Speech
+* 🌐 Web Automation
+* 💻 System Commands
+* 📱 WhatsApp Integration
+* 🧠 AI Processing (OpenAI Ready)
+* 🗄 SQLite Contact Database
 
-### Installation
-
-1. **Clone the Repository**:
-   
-   git clone <repository-url>
-   cd friday-assistant
-   
-
-2. **Install Dependencies**:
-   
-    pip install -r requirements.txt
-
-3. **Database Setup**:
-   - Create an SQLite database `friday.db`.
-   - Add a `contacts` table with a `name` and `mobile_no` field.
-
-4. **OpenAI API Key**:
-   - Add your OpenAI API key in the `aiProcess` function for AI responses (optional).
+It is designed as a **desktop virtual assistant** capable of performing real-world automation tasks.
 
 ---
 
-## Usage
+# 🧠 Core Features
 
-1. **Run the Script**:
-   
-   python friday.py
-   
+## 🎤 Voice Command Recognition
 
-2. **Interact**:
-   - FRIDAY will greet you and wait for commands.
-   - Common commands include:
-     - **Greeting**: "Hello", "Thank you", "Who are you?"
-     - **Web Search**: "Search on YouTube/Google", "Wikipedia <topic>"
-     - **System Commands**: "Shutdown", "Restart", "Minimize all windows"
-     - **Music**: "Play sad/love/rage/party song"
-     - **Cab Booking**: "Book a cab"
-     - **WhatsApp**: "Send a message to <name>", "Call <name>"
-     - **Calculations**: "Calculate 5 + 3"
+* Listens using `speech_recognition`
+* Converts speech → text
+* Responds using `pyttsx3`
 
 ---
 
-## File Overview
+## 🌐 Web & Search Automation
 
-- **Main Script**: Initializes the assistant, configures the voice engine, and sets up the command processing loop.
-- **Functions**:
-  - `speak()`: Text-to-speech.
-  - `wishMe()`: Greeting.
-  - `takeCommand()`: Listens for voice commands.
-  - `search_google()`, `search_youtube()`: Web search.
-  - `click()`, `shutDown()`, `restart()`, `Sleep()`: System control.
-  - `remove_words()`: Filters unnecessary words from a command.
-  - `findContact()`: Searches contact info in `friday.db`.
-  - `whatsApp()`: Sends WhatsApp messages or calls.
-  - `book_cab()`, `friday_book_cab()`: Simulates cab booking.
-  - `aiProcess()`: AI command processing (optional).
+* Google Search
+* YouTube Search
+* Wikipedia Search
+* Open common websites
+
+---
+
+## 💻 System Control
+
+* Shutdown
+* Restart
+* Sleep
+* Minimize all windows
+* Launch apps (VS Code, Word, etc.)
+
+---
+
+## 📱 WhatsApp Automation
+
+* Send messages
+* Make calls
+* Start video calls
+* Fetch contacts from SQLite database
+
+---
+
+## 🎵 Mood-Based Music
+
+* Sad songs
+* Love songs
+* Rage songs
+* Party songs
+
+---
+
+## 🧮 Mathematical Calculations
+
+* Performs basic arithmetic via voice command
+
+---
+
+## 🚕 Cab Booking Simulation
+
+* Simulated booking flow using voice prompts
+
+---
+
+## 🧠 AI Command Processing
+
+* Handles complex or unrecognized commands
+* Uses OpenAI API (optional integration)
+
+---
+
+# 🖼️ Code Structure Preview
+
+---
+
+## 📦 requirements.txt
+
+![Requirements File](https://raw.githubusercontent.com/MohitAggarwal1/readme_images/refs/heads/main/friday/Screenshot%202026-02-15%20150748.png)
+
+Includes major dependencies:
+
+* pyttsx3
+* speech_recognition
+* pyautogui
+* openai
+* sqlite3
+* subprocess
+
+---
+
+## 🎤 takeCommand() – Voice Input Engine
+
+![takeCommand Function](https://raw.githubusercontent.com/MohitAggarwal1/readme_images/refs/heads/main/friday/Screenshot%202026-02-15%20151050.png)
+
+Handles:
+
+* Microphone input
+* Noise adjustment
+* Speech recognition
+* Error handling
+* Returns processed query text
+
+---
+
+## 📱 whatsApp() – Messaging & Calling System
+
+![WhatsApp Function](https://raw.githubusercontent.com/MohitAggarwal1/readme_images/refs/heads/main/friday/Screenshot%202026-02-15%20150924.png)
+
+Features:
+
+* Fetch contact from SQLite database
+* Send WhatsApp message
+* Initiate call
+* Start video call
+* Automated browser redirection
+
+---
+
+## 🧠 aiProcess() – AI Command Processor
+
+![AI Process Function](https://raw.githubusercontent.com/MohitAggarwal1/readme_images/refs/heads/main/friday/Screenshot%202026-02-15%20151009.png)
+
+Handles:
+
+* Complex prompts
+* OpenAI API integration
+* Smart fallback response system
+* Extensible for advanced AI tasks
+
+---
+
+# 🛠️ Tech Stack
+
+* **Python 3.x**
+* `pyttsx3` – Text-to-Speech
+* `speech_recognition` – Voice Input
+* `pyautogui` – System Automation
+* `subprocess` – Shell Execution
+* `sqlite3` – Contact Database
+* `OpenAI API` – AI Processing
+* `webbrowser` – URL Handling
+
+---
+
+# ⚙️ Setup Guide
+
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/MohitAggarwal1/friday.git
+cd friday
+```
+
+---
+
+## 2️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 3️⃣ Setup SQLite Database
+
+Create a database named:
+
+```
+friday.db
+```
+
+Create table:
+
+```sql
+CREATE TABLE contacts (
+    name TEXT,
+    mobile_no TEXT
+);
+```
+
+Add contacts for WhatsApp integration.
+
+---
+
+## 4️⃣ (Optional) Add OpenAI API Key
+
+Inside `aiProcess()` function:
+
+```python
+openai.api_key = "your_api_key_here"
+```
+
+---
+
+# ▶️ Usage
+
+Run the assistant:
+
+```bash
+python friday.py
+```
+
+FRIDAY will:
+
+1. Greet you based on time
+2. Wait for your voice command
+3. Execute the requested task
+
+---
+
+# 🗂️ Project Structure
+
+```
+friday-assistant/
+│
+├── friday.py
+├── requirements.txt
+├── friday.db
+├── module.py
+└── README.md
+```
+
+---
+
+# 🎯 Example Voice Commands
+
+* "Hello"
+* "Search Python on Google"
+* "Open YouTube"
+* "Shutdown the system"
+* "Send message to Harshit"
+* "Call Divya"
+* "Play love songs"
+* "Calculate 25 plus 30"
+* "Book a cab"
+
+---
+
+# 🔥 Highlights
+
+* Modular function design
+* Error handling included
+* Database-driven contact system
+* AI extensibility
+* Real-world automation capabilities
+* Beginner-friendly architecture
+* Expandable to full AI desktop assistant
+
+---
+
+# 📌 Future Enhancements
+
+* GUI interface (Tkinter / PyQt)
+* Wake word detection
+* Offline NLP processing
+* Multi-language support
+* Real-time AI streaming responses
+* Email automation
+* Smart home integration
+
+---
+
+# 📄 License
+
+Licensed under **MIT License** — Free to use, modify, and distribute.
+
+---
+
+# 🙌 Why This Project Matters
+
+FRIDAY demonstrates:
+
+* Voice automation engineering
+* Python system-level scripting
+* AI API integration
+* Database-driven logic
+* Real-world assistant architecture
+
+It’s not just a project — it’s a foundation for building your own AI ecosystem.
+
+---
+
+### ⭐ If you like this project, consider giving it a star!
+
+---
